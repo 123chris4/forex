@@ -1,0 +1,217 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Trading Platform</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <span>ForexHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Trade the Forex Market with Confidence</h1>
+            <p class="hero-subtitle">Your gateway to global currency trading with real-time data and advanced analytics</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="chart-placeholder">
+                <div class="chart-bars">
+                    <div class="bar bar-1"></div>
+                    <div class="bar bar-2"></div>
+                    <div class="bar bar-3"></div>
+                    <div class="bar bar-4"></div>
+                    <div class="bar bar-5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 class="section-title">Why Choose ForexHub?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Real-Time Data</h3>
+                <p>Access live market data with minimal latency for informed decision-making</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Secure Trading</h3>
+                <p>Bank-level security to protect your accounts and sensitive information</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h3>Advanced Analytics</h3>
+                <p>Powerful tools and indicators to analyze market trends and patterns</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Trading</h3>
+                <p>Trade on the go with our fully responsive mobile application</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Expert support team available round the clock to assist you</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Educational Resources</h3>
+                <p>Learn from tutorials, webinars, and comprehensive trading guides</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-item">
+            <h3 class="stat-number">50K+</h3>
+            <p class="stat-label">Active Traders</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="stat-number">$2B+</h3>
+            <p class="stat-label">Daily Volume</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="stat-number">28</h3>
+            <p class="stat-label">Currency Pairs</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="stat-number">98%</h3>
+            <p class="stat-label">Uptime SLA</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <h2 class="section-title">Simple Transparent Pricing</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Starter</h3>
+                <p class="price">$0<span>/month</span></p>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Demo Account</li>
+                    <li><i class="fas fa-check"></i> Basic Charts</li>
+                    <li><i class="fas fa-check"></i> Learning Center</li>
+                    <li><i class="fas fa-times"></i> Live Trading</li>
+                    <li><i class="fas fa-times"></i> Premium Tools</li>
+                </ul>
+                <button class="btn btn-secondary">Get Started</button>
+            </div>
+            <div class="pricing-card featured">
+                <span class="badge">Popular</span>
+                <h3>Professional</h3>
+                <p class="price">$49<span>/month</span></p>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Live Trading Account</li>
+                    <li><i class="fas fa-check"></i> Advanced Charts</li>
+                    <li><i class="fas fa-check"></i> Market Analysis</li>
+                    <li><i class="fas fa-check"></i> Premium Tools</li>
+                    <li><i class="fas fa-check"></i> Priority Support</li>
+                </ul>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Enterprise</h3>
+                <p class="price">Custom<span>/month</span></p>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Everything in Professional</li>
+                    <li><i class="fas fa-check"></i> API Access</li>
+                    <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                    <li><i class="fas fa-check"></i> Custom Integration</li>
+                    <li><i class="fas fa-check"></i> White Label Options</li>
+                </ul>
+                <button class="btn btn-secondary">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>Ready to Start Trading?</h2>
+        <p>Join thousands of traders and begin your forex journey today</p>
+        <button class="btn btn-primary btn-lg">Open Account Now</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>ForexHub is a modern platform for currency trading with cutting-edge technology and expert support.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Risk Disclosure</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ForexHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
